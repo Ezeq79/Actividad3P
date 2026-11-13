@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 7: Depuración y Seguridad en Aplicaciones Móviles - Tutorial</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navegación de retorno -->
+    <nav>
+        <a href="../index.html" class="back-btn">&larr; Volver al Menú Principal</a>
+    </nav>
+
+    <!-- 1️⃣ Portada / Encabezado -->
+    <header>
+        <h1>Módulo 7 — Depuración y Seguridad en Aplicaciones Móviles</h1>
+        <p><strong>Subtítulo:</strong> Detecta errores, protege los datos y mejora la confiabilidad de tus aplicaciones</p>
+        
+        <div class="img-placeholder">
+            [Espacio para Imagen]: Desarrollador analizando errores en una aplicación móvil mientras monitorea la seguridad de los datos.
+        </div>
+    </header>
+
+    <main>
+        <!-- 2️⃣ ¿Qué es la Depuración y la Seguridad? -->
+        <section id="que-es">
+            <h2>2. ¿Qué es la Depuración y la Seguridad?</h2>
+            <p>La depuración (debugging) es el proceso de identificar, analizar y corregir errores o fallos en una aplicación. Su objetivo es garantizar que el software funcione correctamente y cumpla con los requisitos establecidos.</p>
+            <p>La seguridad informática, por su parte, consiste en implementar mecanismos que protejan la información, los recursos y los usuarios frente a accesos no autorizados, ataques o pérdidas de datos.</p>
+            <p>En el desarrollo móvil, ambos conceptos son fundamentales para construir aplicaciones confiables, estables y seguras.</p>
+            
+            <h3>Importancia</h3>
+            <ul>
+                <li>Detecta errores antes de publicar una aplicación.</li>
+                <li>Mejora la estabilidad del sistema.</li>
+                <li>Protege información sensible.</li>
+                <li>Reduce riesgos de fallos críticos.</li>
+                <li>Incrementa la confianza del usuario.</li>
+                <li>Facilita el mantenimiento del software.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Diagrama mostrando la relación entre depuración, seguridad y calidad del software.
+            </div>
+
+            <h3>Video Recomendado</h3>
+            <ul>
+                <li>Introducción a Debugging y Seguridad en Android.</li>
+            </ul>
+        </section>
+
+        <!-- 3️⃣ Tipos de Errores en una Aplicación -->
+        <section id="tipos-errores">
+            <h2>3. Tipos de Errores en una Aplicación</h2>
+            
+            <h3>📌 Errores de Sintaxis</h3>
+            <p>Ocurren cuando el código no cumple las reglas del lenguaje de programación.</p>
+            <p><strong>Ejemplos:</strong> Paréntesis faltantes, variables mal declaradas, errores de escritura.</p>
+            <p><strong>Consecuencia:</strong> La aplicación no compila correctamente.</p>
+
+            <h3>📌 Errores de Ejecución</h3>
+            <p>Aparecen mientras la aplicación está funcionando.</p>
+            <p><strong>Ejemplos:</strong> Divisiones entre cero, acceso a objetos inexistentes, fallos de memoria.</p>
+            <p><strong>Consecuencia:</strong> Cierre inesperado de la aplicación.</p>
+
+            <h3>📌 Errores Lógicos</h3>
+            <p>La aplicación funciona, pero produce resultados incorrectos.</p>
+            <p><strong>Ejemplos:</strong> Cálculos erróneos, condiciones mal definidas, validaciones incorrectas.</p>
+            <p><strong>Consecuencia:</strong> Resultados equivocados para el usuario.</p>
+
+            <h3>📌 Vulnerabilidades de Seguridad</h3>
+            <p>Debilidades que pueden ser aprovechadas por atacantes.</p>
+            <p><strong>Ejemplos:</strong> Contraseñas sin cifrar, falta de autenticación, datos expuestos.</p>
+            <p><strong>Consecuencia:</strong> Robo o pérdida de información.</p>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Clasificación visual de errores y vulnerabilidades.
+            </div>
+
+            <h3>Video Recomendado</h3>
+            <ul>
+                <li>Tipos de errores más comunes en el desarrollo móvil.</li>
+            </ul>
+        </section>
+
+        <!-- 4️⃣ Herramientas de Depuración -->
+        <section id="herramientas">
+            <h2>4. Herramientas de Depuración</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Herramienta</th>
+                        <th>Función Principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Android Studio Debugger</td>
+                        <td>Analizar ejecución del código</td>
+                    </tr>
+                    <tr>
+                        <td>Logcat</td>
+                        <td>Visualizar mensajes y errores</td>
+                    </tr>
+                    <tr>
+                        <td>Android Profiler</td>
+                        <td>Monitorear memoria y rendimiento</td>
+                    </tr>
+                    <tr>
+                        <td>Firebase Crashlytics</td>
+                        <td>Detectar fallos en producción</td>
+                    </tr>
+                    <tr>
+                        <td>ADB (Android Debug Bridge)</td>
+                        <td>Comunicación con dispositivos Android</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>✅ Ventajas</h3>
+            <ul>
+                <li>Identificación rápida de errores.</li>
+                <li>Seguimiento de fallos.</li>
+                <li>Mejor rendimiento de la aplicación.</li>
+                <li>Reducción de tiempo de mantenimiento.</li>
+            </ul>
+
+            <h3>⚠️ Desventajas</h3>
+            <ul>
+                <li>Requieren conocimientos técnicos.</li>
+                <li>Pueden consumir recursos durante las pruebas.</li>
+                <li>Algunas herramientas generan gran cantidad de información.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Captura de Android Studio mostrando herramientas de depuración.
+            </div>
+        </section>
+
+        <!-- 5️⃣ Proceso de Depuración -->
+        <section id="proceso-depuracion">
+            <h2>5. Proceso de Depuración</h2>
+            <p>La depuración sigue una serie de pasos para localizar y solucionar problemas.</p>
+            
+            <h3>🔑 Etapas Principales</h3>
+            <ul>
+                <li><strong>Identificación:</strong> Detectar el error.</li>
+                <li><strong>Reproducción:</strong> Encontrar las condiciones que generan el problema.</li>
+                <li><strong>Análisis:</strong> Determinar la causa del fallo.</li>
+                <li><strong>Corrección:</strong> Modificar el código para solucionar el error.</li>
+                <li><strong>Verificación:</strong> Comprobar que el problema fue resuelto.</li>
+            </ul>
+
+            <h3>🔄 Flujo de Depuración</h3>
+            <ol>
+                <li>Detectar error.</li>
+                <li>Analizar registros.</li>
+                <li>Identificar causa.</li>
+                <li>Aplicar corrección.</li>
+                <li>Probar nuevamente.</li>
+                <li>Validar solución.</li>
+            </ol>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Error → Análisis → Corrección → Prueba → Solución
+            </div>
+        </section>
+
+        <!-- 6️⃣ Seguridad en Aplicaciones Móviles -->
+        <section id="seguridad">
+            <h2>6. Seguridad en Aplicaciones Móviles</h2>
+            <p>La seguridad busca proteger los datos y garantizar que la aplicación funcione de manera confiable.</p>
+            
+            <h3>Aspectos Fundamentales</h3>
+            <ul>
+                <li><strong>Autenticación:</strong> Verifica la identidad del usuario.</li>
+                <li><strong>Autorización:</strong> Controla qué acciones puede realizar cada usuario.</li>
+                <li><strong>Cifrado:</strong> Protege los datos almacenados y transmitidos.</li>
+                <li><strong>Integridad:</strong> Garantiza que la información no sea alterada.</li>
+                <li><strong>Disponibilidad:</strong> Asegura que los servicios estén accesibles cuando sean necesarios.</li>
+            </ul>
+
+            <h3>Buenas Prácticas</h3>
+            <ul>
+                <li>Utilizar contraseñas seguras.</li>
+                <li>Aplicar cifrado de datos.</li>
+                <li>Proteger las comunicaciones mediante HTTPS.</li>
+                <li>Actualizar bibliotecas periódicamente.</li>
+                <li>Validar entradas de usuarios.</li>
+                <li>Evitar almacenar información sensible sin protección.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Diagrama mostrando autenticación, cifrado y protección de datos.
+            </div>
+        </section>
+
+        <!-- 7️⃣ Ejemplos Prácticos -->
+        <section id="ejemplos">
+            <h2>7. Ejemplos Prácticos</h2>
+            
+            <h3>Caso 1: Aplicación Bancaria</h3>
+            <p>La aplicación utiliza autenticación multifactor para verificar la identidad del usuario.</p>
+            <p><strong>Beneficio:</strong> Mayor protección frente a accesos no autorizados.</p>
+
+            <h3>Caso 2: Aplicación de Comercio Electrónico</h3>
+            <p>La información de pago es cifrada antes de ser transmitida.</p>
+            <p><strong>Beneficio:</strong> Protección de datos financieros.</p>
+
+            <h3>Caso 3: Aplicación Educativa</h3>
+            <p>Se corrigen errores reportados por estudiantes mediante registros de fallos.</p>
+            <p><strong>Beneficio:</strong> Mayor estabilidad de la aplicación.</p>
+
+            <h3>Caso 4: Red Social</h3>
+            <p>La plataforma detecta intentos de acceso sospechosos y solicita verificación adicional.</p>
+            <p><strong>Beneficio:</strong> Protección de cuentas de usuario.</p>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Diferentes escenarios de aplicaciones utilizando mecanismos de seguridad.
+            </div>
+        </section>
+
+        <!-- 8️⃣ Relación con Estructuras de Datos -->
+        <section id="estructuras">
+            <h2>8. 🔗 Relación con Estructuras de Datos</h2>
+            <p>La depuración y la seguridad utilizan diversas estructuras de datos para almacenar, analizar y proteger información.</p>
+            
+            <h3>📌 Arreglos (Arrays)</h3>
+            <p>Permiten almacenar colecciones de datos de forma ordenada.</p>
+            <p><strong>Uso:</strong> Registros temporales, datos de monitoreo, configuraciones.</p>
+            <div class="img-placeholder">[Espacio para Imagen]: Representación visual de un arreglo de datos.</div>
+
+            <h3>📌 Pilas (Stacks)</h3>
+            <p>Permiten rastrear la ejecución del programa.</p>
+            <p><strong>Uso:</strong> Stack Trace, seguimiento de errores, navegación de llamadas.</p>
+            <p><strong>Beneficio:</strong> Identificar el origen de excepciones y fallos.</p>
+            <div class="img-placeholder">[Espacio para Imagen]: Pila de llamadas utilizada en depuración.</div>
+
+            <h3>📌 Colas (Queues)</h3>
+            <p>Gestionan eventos y tareas pendientes.</p>
+            <p><strong>Uso:</strong> Procesamiento de solicitudes, gestión de eventos, notificaciones.</p>
+            <div class="img-placeholder">[Espacio para Imagen]: Cola de tareas procesadas secuencialmente.</div>
+
+            <h3>📌 Tablas Hash</h3>
+            <p>Facilitan búsquedas rápidas.</p>
+            <p><strong>Uso:</strong> Gestión de sesiones, caché de autenticación, tokens de acceso.</p>
+            <div class="img-placeholder">[Espacio para Imagen]: Esquema de almacenamiento mediante hash.</div>
+
+            <h3>📌 Árboles</h3>
+            <p>Organizan información jerárquica.</p>
+            <p><strong>Uso:</strong> Permisos de usuarios, estructuras de archivos, certificados digitales.</p>
+            <div class="img-placeholder">[Espacio para Imagen]: Árbol jerárquico de roles y permisos.</div>
+        </section>
+
+        <!-- 9️⃣ Amenazas Comunes en Aplicaciones Móviles -->
+        <section id="amenazas">
+            <h2>9. Amenazas Comunes en Aplicaciones Móviles</h2>
+            <ul>
+                <li><strong>Malware:</strong> Software diseñado para dañar dispositivos o robar información.</li>
+                <li><strong>Phishing:</strong> Intento de obtener datos personales mediante engaños.</li>
+                <li><strong>Robo de Credenciales:</strong> Obtención ilegal de nombres de usuario y contraseñas.</li>
+                <li><strong>Inyección de Código:</strong> Introducción de instrucciones maliciosas en el sistema.</li>
+                <li><strong>Accesos No Autorizados:</strong> Intentos de ingresar a recursos restringidos.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Diagrama mostrando diferentes amenazas de seguridad móvil.
+            </div>
+        </section>
+
+        <!-- 🔟 Seguridad en Android -->
+        <section id="seguridad-android">
+            <h2>10. Seguridad en Android</h2>
+            <p>Android proporciona diversas herramientas para proteger aplicaciones y usuarios.</p>
+            
+            <h3>Funcionalidades de Seguridad</h3>
+            <ul>
+                <li><strong>Permisos:</strong> Controlan el acceso a recursos del dispositivo.</li>
+                <li><strong>Sandbox:</strong> Aísla aplicaciones entre sí.</li>
+                <li><strong>Google Play Protect:</strong> Analiza aplicaciones en busca de comportamientos maliciosos.</li>
+                <li><strong>Cifrado del Dispositivo:</strong> Protege la información almacenada.</li>
+                <li><strong>Biometría:</strong> Permite autenticación mediante huella digital o reconocimiento facial.</li>
+            </ul>
+
+            <h3>Beneficios</h3>
+            <ul>
+                <li>Mayor protección de datos.</li>
+                <li>Reducción de vulnerabilidades.</li>
+                <li>Mejor experiencia de usuario.</li>
+                <li>Seguridad integrada por defecto.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Arquitectura de seguridad de Android.
+            </div>
+        </section>
+
+        <!-- 1️⃣1️⃣ Relación con la Ingeniería de Software -->
+        <section id="ingenieria-software">
+            <h2>11. Relación con la Ingeniería de Software</h2>
+            <p>La depuración y la seguridad forman parte esencial del ciclo de vida del software.</p>
+            
+            <h3>Beneficios para el proyecto</h3>
+            <ul>
+                <li>Mayor calidad del producto.</li>
+                <li>Menor costo de mantenimiento.</li>
+                <li>Incremento de la confiabilidad.</li>
+                <li>Reducción de fallos críticos.</li>
+                <li>Protección de los usuarios.</li>
+            </ul>
+            <p>Además, ayudan a implementar principios de desarrollo seguro desde las primeras etapas del proyecto.</p>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Ciclo de vida del software incluyendo pruebas, depuración y seguridad.
+            </div>
+        </section>
+
+        <!-- 1️⃣2️⃣ Sección de Videos Recomendados -->
+        <section id="videos">
+            <h2>12. 🎬 Sección de Videos Recomendados</h2>
+            <ul>
+                <li>Introducción a Debugging en Android Studio (Conceptos básicos de depuración).</li>
+                <li>Uso de Logcat y Android Profiler (Análisis de errores y rendimiento).</li>
+                <li>Firebase Crashlytics (Monitoreo de fallos en aplicaciones reales).</li>
+                <li>Seguridad en Aplicaciones Android (Buenas prácticas de protección de datos).</li>
+                <li>Principales Vulnerabilidades Móviles (Amenazas y métodos de prevención).</li>
+                <li>Desarrollo Seguro en Android (Estrategias modernas para aplicaciones seguras).</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 1️⃣3️⃣ Pie de página -->
+    <footer>
+        <p>&copy; 2026 - Tutorial Académico de Desarrollo Web y Aplicaciones Móviles</p>
+        <p>Recursos Oficiales: 
+            <a href="https://developer.android.com" target="_blank">Android Developers</a> | 
+            <a href="https://developer.android.com/studio/debug" target="_blank">Android Debugger</a> | 
+            <a href="https://developer.android.com/studio/debug/logcat" target="_blank">Logcat</a> | 
+            <a href="https://developer.android.com/studio/profile/android-profiler" target="_blank">Android Profiler</a> | 
+            <a href="https://developer.android.com/studio/command-line/adb" target="_blank">Android Debug Bridge (ADB)</a> | 
+            <a href="https://firebase.google.com/products/crashlytics" target="_blank">Firebase Crashlytics</a> | 
+            <a href="https://owasp.org/www-project-mobile-security/" target="_blank">OWASP Mobile Security</a> | 
+            <a href="https://support.google.com/googleplay/answer/2812853" target="_blank">Google Play Protect</a>
+        </p>
+        <p>Ezequiel Lima Ramírez — Tutorial de Desarrollo Web y Aplicaciones Móviles</p>
+    </footer>
+
+</body>
+</html>

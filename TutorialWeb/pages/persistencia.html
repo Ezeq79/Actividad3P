@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2: Persistencia y Acceso a Datos - Tutorial</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navegación de retorno -->
+    <nav>
+        <a href="../index.html" class="back-btn">&larr; Volver al Menú Principal</a>
+    </nav>
+
+    <!-- 1️⃣ Portada / Encabezado -->
+    <header>
+        <h1>Módulo 2 — Persistencia y Acceso a Datos</h1>
+        <p><strong>Subtítulo:</strong> Almacena, organiza y recupera información en aplicaciones modernas</p>
+        
+        <div class="img-placeholder">
+            [Espacio para Imagen]: Aplicación móvil conectándose a una base de datos con flujo de información entre usuario y servidor.
+        </div>
+    </header>
+
+    <main>
+        <!-- 2️⃣ ¿Qué es la Persistencia de Datos? -->
+        <section id="que-es">
+            <h2>2. ¿Qué es la Persistencia de Datos?</h2>
+            <p>La persistencia de datos es la capacidad de un sistema para conservar información de forma permanente o semipermanente, incluso después de cerrar una aplicación o apagar un dispositivo.</p>
+            <p>Sin persistencia, todos los datos creados por una aplicación se perderían al finalizar la ejecución. Por ello, constituye uno de los pilares fundamentales en el desarrollo de software y aplicaciones móviles.</p>
+            <p>La persistencia permite almacenar información como:</p>
+            <ul>
+                <li>Usuarios registrados.</li>
+                <li>Contraseñas cifradas.</li>
+                <li>Configuraciones del sistema.</li>
+                <li>Historial de actividades.</li>
+                <li>Mensajes.</li>
+                <li>Archivos multimedia.</li>
+                <li>Inventarios y registros empresariales.</li>
+            </ul>
+            
+            <h3>Importancia</h3>
+            <ul>
+                <li>Conserva información entre sesiones.</li>
+                <li>Evita pérdida de datos.</li>
+                <li>Mejora la experiencia del usuario.</li>
+                <li>Permite recuperar información rápidamente.</li>
+                <li>Facilita la sincronización entre dispositivos.</li>
+                <li>Hace posible el funcionamiento de aplicaciones empresariales.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Diagrama mostrando datos que permanecen almacenados después de cerrar una aplicación.
+            </div>
+        </section>
+
+        <!-- 3️⃣ Tipos de Persistencia de Datos -->
+        <section id="tipos">
+            <h2>3. Tipos de Persistencia de Datos</h2>
+            
+            <h3>Persistencia Local</h3>
+            <p>Los datos se almacenan directamente en el dispositivo del usuario.</p>
+            <p><strong>Ejemplos:</strong> SQLite, Room Database, SharedPreferences, Archivos internos.</p>
+            <p><strong>Características:</strong> No requiere Internet, mayor velocidad de acceso, menor consumo de recursos de red, limitada al dispositivo local.</p>
+
+            <h3>Persistencia Remota</h3>
+            <p>Los datos se almacenan en servidores externos o en la nube.</p>
+            <p><strong>Ejemplos:</strong> Firebase, MySQL, PostgreSQL, SQL Server.</p>
+            <p><strong>Características:</strong> Accesible desde múltiples dispositivos, facilita sincronización, requiere conexión de red, escalable para grandes volúmenes de información.</p>
+
+            <h3>Persistencia Híbrida</h3>
+            <p>Combina almacenamiento local y remoto para ofrecer mayor rendimiento y disponibilidad.</p>
+            <p><strong>Ventajas:</strong> Trabajo sin conexión, sincronización automática, mejor experiencia de usuario, mayor confiabilidad.</p>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Comparación visual entre almacenamiento local, remoto e híbrido.
+            </div>
+        </section>
+
+        <!-- 4️⃣ Métodos de Almacenamiento de Datos -->
+        <section id="metodos">
+            <h2>4. Métodos de Almacenamiento de Datos</h2>
+            <p>En el desarrollo moderno se emplean diversos métodos según la naturaleza de la información:</p>
+            <ul>
+                <li><strong>Archivos:</strong> Documentos e imágenes.</li>
+                <li><strong>SharedPreferences:</strong> Configuraciones simples.</li>
+                <li><strong>SQLite:</strong> Bases de datos locales.</li>
+                <li><strong>Room:</strong> Persistencia estructurada en Android.</li>
+                <li><strong>Firebase:</strong> Datos en tiempo real.</li>
+                <li><strong>MySQL:</strong> Aplicaciones web y móviles.</li>
+                <li><strong>PostgreSQL:</strong> Sistemas empresariales.</li>
+            </ul>
+
+            <h3>Ventajas Generales</h3>
+            <ul>
+                <li>Organización de la información.</li>
+                <li>Recuperación eficiente.</li>
+                <li>Escalabilidad y seguridad.</li>
+            </ul>
+
+            <h3>Desventajas Generales</h3>
+            <ul>
+                <li>Mayor complejidad.</li>
+                <li>Costos de administración.</li>
+                <li>Necesidad de respaldos y riesgos de seguridad si se implementan incorrectamente.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Tabla comparativa ilustrada de tecnologías de almacenamiento.
+            </div>
+        </section>
+
+        <!-- 5️⃣ Funcionamiento de la Persistencia de Datos -->
+        <section id="funcionamiento">
+            <h2>5. Funcionamiento de la Persistencia de Datos</h2>
+            
+            <h3>Elementos Principales</h3>
+            <ul>
+                <li><strong>Base de Datos:</strong> Repositorio donde se almacena información estructurada.</li>
+                <li><strong>Tabla:</strong> Conjunto organizado de registros.</li>
+                <li><strong>Registro:</strong> Información individual almacenada.</li>
+                <li><strong>Consulta:</strong> Solicitud de datos almacenados.</li>
+                <li><strong>Transacción:</strong> Grupo de operaciones ejecutadas como una sola unidad lógica.</li>
+            </ul>
+
+            <h3>Flujo Típico</h3>
+            <ol>
+                <li>Usuario ingresa información.</li>
+                <li>La aplicación valida los datos.</li>
+                <li>Los datos son almacenados.</li>
+                <li>Posteriormente son consultados.</li>
+                <li>Se muestran nuevamente al usuario.</li>
+            </ol>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Usuario → Aplicación → Base de Datos → Aplicación → Usuario.
+            </div>
+        </section>
+
+        <!-- 6️⃣ Acceso y Gestión de Datos -->
+        <section id="gestion">
+            <h2>6. Acceso y Gestión de Datos</h2>
+            <p>La gestión de datos permite realizar operaciones fundamentales sobre la información almacenada.</p>
+            
+            <h3>Operaciones CRUD</h3>
+            <ul>
+                <li><strong>Create:</strong> Crear registros.</li>
+                <li><strong>Read:</strong> Consultar información.</li>
+                <li><strong>Update:</strong> Actualizar datos existentes.</li>
+                <li><strong>Delete:</strong> Eliminar registros.</li>
+            </ul>
+
+            <h3>Seguridad en el Acceso a Datos</h3>
+            <ul>
+                <li>Autenticación de usuarios y control de permisos.</li>
+                <li>Cifrado de información.</li>
+                <li>Respaldo periódico y prevención de pérdidas de datos.</li>
+            </ul>
+
+            <h3>Aplicación en Desarrollo Móvil</h3>
+            <p>Las aplicaciones Android e iOS utilizan persistencia para almacenar datos de usuario, configuraciones, historial de navegación, datos temporales e información sincronizada con la nube.</p>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Aplicación móvil realizando operaciones CRUD sobre una base de datos.
+            </div>
+        </section>
+
+        <!-- 7️⃣ Ejemplos Prácticos -->
+        <section id="ejemplos">
+            <h2>7. Ejemplos Prácticos</h2>
+            
+            <h3>Caso 1: Aplicación de Notas</h3>
+            <p>El usuario crea notas que permanecen disponibles incluso después de cerrar la aplicación. Persistencia utilizada: SQLite, Room Database.</p>
+
+            <h3>Caso 2: Aplicación Bancaria</h3>
+            <p>La información de transacciones se almacena en servidores seguros. Persistencia utilizada: Bases de datos remotas y servicios en la nube.</p>
+
+            <h3>Caso 3: Aplicación de Compras</h3>
+            <p>El carrito de compras debe mantenerse aunque el usuario cierre la aplicación. Persistencia utilizada: Almacenamiento local y sincronización remota.</p>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Pantalla de una aplicación mostrando datos almacenados.
+            </div>
+        </section>
+
+        <!-- 8️⃣ Relación con Estructuras de Datos -->
+        <section id="estructuras">
+            <h2>8. Relación con Estructuras de Datos</h2>
+            <p>La persistencia de datos depende directamente de las estructuras de datos utilizadas para organizar y recuperar la información:</p>
+            <ul>
+                <li><strong>Arreglos (Arrays):</strong> Permiten almacenar colecciones de elementos del mismo tipo. Uso en listas temporales, catálogos y resultados de consultas.</li>
+                <li><strong>Listas Enlazadas:</strong> Permiten insertar y eliminar elementos dinámicamente. Uso en navegación de registros, historiales y cachés temporales.</li>
+                <li><strong>Árboles:</strong> Organizan información de manera jerárquica. Uso en sistemas de archivos, índices de bases de datos y gestión documental.</li>
+                <li><strong>Tablas Hash:</strong> Permiten accesos extremadamente rápidos a los datos. Uso en búsquedas, cachés e identificación de registros.</li>
+                <li><strong>B-Trees y B+ Trees:</strong> Estructuras ampliamente utilizadas en motores de bases de datos para indexación, consultas rápidas y grandes volúmenes de información.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imágenes de Estructuras]: Representación visual de arreglos, listas, árboles, tablas hash y B-Trees.
+            </div>
+        </section>
+
+        <!-- 9️⃣ Persistencia en Android -->
+        <section id="android">
+            <h2>9. Persistencia en Android</h2>
+            <p>Android ofrece múltiples mecanismos para almacenar datos:</p>
+            <ul>
+                <li><strong>SharedPreferences:</strong> Utilizado para configuraciones, preferencias de usuario y datos simples.</li>
+                <li><strong>SQLite:</strong> Base de datos local integrada que permite consultas complejas y relaciones entre tablas.</li>
+                <li><strong>Room Database:</strong> Biblioteca oficial de Android para trabajar con SQLite de forma más segura (menos código, mayor seguridad, integración moderna).</li>
+                <li><strong>Firebase:</strong> Plataforma en la nube desarrollada por Google para sincronización en tiempo real, autenticación y almacenamiento remoto.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Arquitectura Android → Room → API → Firebase.
+            </div>
+        </section>
+
+        <!-- 🔟 Sección de Videos Recomendados -->
+        <section id="videos">
+            <h2>10. Videos Recomendados</h2>
+            <ul>
+                <li>Introducción a Bases de Datos y Persistencia.</li>
+                <li>SQLite desde cero para desarrolladores.</li>
+                <li>Room Database para Android (Guía práctica).</li>
+                <li>Firebase Realtime Database integración móvil.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 1️⃣1️⃣ Pie de página -->
+    <footer>
+        <p>&copy; 2026 - Tutorial Académico de Desarrollo Web y Aplicaciones Móviles</p>
+        <p>Recursos oficiales: 
+            <a href="https://developer.android.com/" target="_blank">Android Developers</a> | 
+            <a href="https://www.sqlite.org/" target="_blank">SQLite</a> | 
+            <a href="https://firebase.google.com/" target="_blank">Firebase</a> | 
+            <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> | 
+            <a href="https://www.mysql.com/" target="_blank">MySQL</a>
+        </p>
+        <p>Ezequiel Lima Ramírez — Tutorial de Desarrollo Web y Aplicaciones Móviles</p>
+    </footer>
+
+</body>
+</html>

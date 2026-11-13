@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 6: Librerías y Toolkits para el Desarrollo de Aplicaciones Móviles - Tutorial</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navegación de retorno -->
+    <nav>
+        <a href="../index.html" class="back-btn">&larr; Volver al Menú Principal</a>
+    </nav>
+
+    <!-- 1️⃣ Portada / Encabezado -->
+    <header>
+        <h1>Módulo 6 — Librerías y Toolkits para Aplicaciones Móviles</h1>
+        <p><strong>Subtítulo:</strong> Herramientas que aceleran el desarrollo y mejoran la calidad de las aplicaciones</p>
+        
+        <div class="img-placeholder">
+            [Espacio para Imagen]: Desarrollador construyendo una aplicación móvil utilizando diversas herramientas, librerías y componentes reutilizables.
+        </div>
+    </header>
+
+    <main>
+        <!-- 2️⃣ ¿Qué son las Librerías y Toolkits? -->
+        <section id="que-es">
+            <h2>2. ¿Qué son las Librerías y Toolkits?</h2>
+            <p>Las librerías y toolkits son conjuntos de recursos de software diseñados para facilitar el desarrollo de aplicaciones. Proporcionan funciones, componentes y herramientas previamente desarrolladas que permiten ahorrar tiempo y reducir complejidad.</p>
+            <p>En lugar de programar todas las funcionalidades desde cero, los desarrolladores pueden reutilizar código confiable y optimizado.</p>
+            <p>Las librerías suelen centrarse en tareas específicas, mientras que los toolkits ofrecen conjuntos más amplios de herramientas para construir aplicaciones completas.</p>
+            
+            <h3>Importancia</h3>
+            <ul>
+                <li>Reducen el tiempo de desarrollo.</li>
+                <li>Favorecen la reutilización de código.</li>
+                <li>Mejoran la productividad.</li>
+                <li>Disminuyen errores de programación.</li>
+                <li>Facilitan el mantenimiento.</li>
+                <li>Incorporan buenas prácticas de desarrollo.</li>
+                <li>Permiten crear aplicaciones más escalables.</li>
+                <li>Facilitan el trabajo colaborativo.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Comparación entre desarrollar una aplicación desde cero y utilizar componentes reutilizables.
+            </div>
+
+            <h3>Video Recomendado</h3>
+            <ul>
+                <li>Introducción a librerías, frameworks y toolkits para desarrollo móvil.</li>
+            </ul>
+        </section>
+
+        <!-- 3️⃣ Diferencia entre Librerías y Toolkits -->
+        <section id="diferencia">
+            <h2>3. Diferencia entre Librerías y Toolkits</h2>
+            
+            <h3>📌 Librerías</h3>
+            <p>Son colecciones de funciones o componentes especializados que resuelven tareas concretas.</p>
+            <p><strong>Ejemplos:</strong> Glide, Coil, Picasso, Retrofit, Gson, Lottie</p>
+            <p><strong>Características:</strong></p>
+            <ul>
+                <li>Funcionalidad específica.</li>
+                <li>Integración sencilla.</li>
+                <li>Menor tamaño.</li>
+                <li>Reutilización de código.</li>
+                <li>Reducen trabajo repetitivo.</li>
+            </ul>
+
+            <h3>📌 Toolkits</h3>
+            <p>Son conjuntos completos de herramientas que permiten desarrollar aplicaciones de manera integral.</p>
+            <p><strong>Ejemplos:</strong> Android SDK, Jetpack Compose, Android Jetpack, Flutter, React Native, Xamarin, Kotlin Multiplatform</p>
+            <p><strong>Características:</strong></p>
+            <ul>
+                <li>Incluyen múltiples herramientas.</li>
+                <li>Facilitan el desarrollo completo.</li>
+                <li>Proporcionan componentes visuales.</li>
+                <li>Mejoran la productividad.</li>
+                <li>Integran bibliotecas, APIs y recursos.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Diagrama comparativo entre una librería específica y un toolkit completo.
+            </div>
+
+            <h3>Video Recomendado</h3>
+            <ul>
+                <li>Librerías vs Frameworks vs Toolkits.</li>
+            </ul>
+        </section>
+
+        <!-- 4️⃣ Librerías Más Utilizadas en Android -->
+        <section id="librerias-android">
+            <h2>4. Librerías Más Utilizadas en Android</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Librería</th>
+                        <th>Función Principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Retrofit</td>
+                        <td>Consumo de APIs REST</td>
+                    </tr>
+                    <tr>
+                        <td>Glide</td>
+                        <td>Carga y optimización de imágenes</td>
+                    </tr>
+                    <tr>
+                        <td>Coil</td>
+                        <td>Gestión moderna de imágenes</td>
+                    </tr>
+                    <tr>
+                        <td>Gson</td>
+                        <td>Conversión de datos JSON</td>
+                    </tr>
+                    <tr>
+                        <td>Room</td>
+                        <td>Persistencia local</td>
+                    </tr>
+                    <tr>
+                        <td>Firebase SDK</td>
+                        <td>Servicios en la nube</td>
+                    </tr>
+                    <tr>
+                        <td>Lottie</td>
+                        <td>Animaciones avanzadas</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>✅ Ventajas</h3>
+            <ul>
+                <li>Menor tiempo de desarrollo.</li>
+                <li>Código más limpio y organizado.</li>
+                <li>Mejor rendimiento.</li>
+                <li>Soluciones probadas por comunidades de desarrollo.</li>
+                <li>Menos errores de implementación.</li>
+            </ul>
+
+            <h3>⚠️ Desventajas</h3>
+            <ul>
+                <li>Dependencia de terceros.</li>
+                <li>Posibles problemas de compatibilidad.</li>
+                <li>Necesidad de actualizaciones frecuentes.</li>
+                <li>Incremento del tamaño final de la aplicación.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Tabla visual mostrando las principales librerías Android y sus funciones.
+            </div>
+        </section>
+
+        <!-- 5️⃣ Funcionamiento de las Librerías y Toolkits -->
+        <section id="funcionamiento">
+            <h2>5. Funcionamiento de las Librerías y Toolkits</h2>
+            <p>Las librerías y toolkits actúan como capas de apoyo que proporcionan funcionalidades listas para usar dentro de una aplicación.</p>
+            
+            <h3>🔑 Elementos Principales</h3>
+            <ul>
+                <li><strong>Código de la Aplicación:</strong> Lógica desarrollada por el programador.</li>
+                <li><strong>Librería:</strong> Proporciona funciones especializadas.</li>
+                <li><strong>Toolkit:</strong> Ofrece herramientas integradas para el desarrollo completo.</li>
+                <li><strong>Sistema Operativo:</strong> Ejecuta la aplicación y administra los recursos.</li>
+                <li><strong>Usuario:</strong> Interactúa con la aplicación final.</li>
+            </ul>
+
+            <h3>🔄 Flujo de Funcionamiento</h3>
+            <ol>
+                <li>El desarrollador integra una librería o toolkit.</li>
+                <li>La aplicación utiliza sus funciones.</li>
+                <li>El sistema procesa las solicitudes.</li>
+                <li>Se obtiene un resultado.</li>
+                <li>El usuario interactúa con la funcionalidad implementada.</li>
+            </ol>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Desarrollador → Librería o Toolkit → Aplicación → Usuario
+            </div>
+        </section>
+
+        <!-- 6️⃣ Uso de Librerías en Aplicaciones Móviles -->
+        <section id="uso-librerias">
+            <h2>6. Uso de Librerías en Aplicaciones Móviles</h2>
+            <p>Las librerías ayudan a resolver problemas comunes sin necesidad de programar soluciones desde cero.</p>
+            
+            <h3>Casos frecuentes</h3>
+            <ul>
+                <li><strong>Gestión de imágenes:</strong> Glide, Coil, Picasso</li>
+                <li><strong>Comunicación con servidores:</strong> Retrofit, Volley</li>
+                <li><strong>Bases de datos:</strong> Room Database, SQLite</li>
+                <li><strong>Servicios en la nube:</strong> Firebase SDK</li>
+                <li><strong>Animaciones:</strong> Lottie</li>
+                <li><strong>Navegación:</strong> Android Navigation Component</li>
+            </ul>
+
+            <h3>Buenas prácticas</h3>
+            <ul>
+                <li>Utilizar librerías reconocidas.</li>
+                <li>Mantener versiones actualizadas.</li>
+                <li>Revisar documentación oficial.</li>
+                <li>Evitar dependencias innecesarias.</li>
+                <li>Verificar compatibilidad con el proyecto.</li>
+                <li>Analizar el impacto en rendimiento.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Aplicación móvil utilizando múltiples librerías para distintas funcionalidades.
+            </div>
+        </section>
+
+        <!-- 7️⃣ Ejemplos Prácticos -->
+        <section id="ejemplos">
+            <h2>7. Ejemplos Prácticos</h2>
+            
+            <h3>Caso 1: Aplicación de Noticias</h3>
+            <p>Obtiene información desde Internet y muestra contenidos actualizados.</p>
+            <p><strong>Herramientas utilizadas:</strong> Retrofit, Gson</p>
+
+            <h3>Caso 2: Aplicación de Fotografías</h3>
+            <p>Carga cientos de imágenes de forma eficiente.</p>
+            <p><strong>Herramientas utilizadas:</strong> Glide, Coil</p>
+
+            <h3>Caso 3: Aplicación Empresarial</h3>
+            <p>Almacena información de usuarios de forma local.</p>
+            <p><strong>Herramientas utilizadas:</strong> Room Database</p>
+
+            <h3>Caso 4: Aplicación con Animaciones</h3>
+            <p>Utiliza animaciones modernas para mejorar la interfaz.</p>
+            <p><strong>Herramientas utilizadas:</strong> Lottie</p>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Varias aplicaciones móviles utilizando librerías especializadas.
+            </div>
+        </section>
+
+        <!-- 8️⃣ Relación con Estructuras de Datos -->
+        <section id="estructuras">
+            <h2>8. 🔗 Relación con Estructuras de Datos</h2>
+            <p>Las librerías y toolkits utilizan internamente diferentes estructuras de datos para almacenar y procesar información de manera eficiente.</p>
+            
+            <h3>📌 Arreglos (Arrays)</h3>
+            <p>Permiten almacenar colecciones de elementos.</p>
+            <p><strong>Uso:</strong> Listas de imágenes, datos obtenidos desde APIs, configuraciones de aplicaciones.</p>
+            <div class="img-placeholder">[Espacio para Imagen]: Colección de elementos almacenados en un arreglo.</div>
+
+            <h3>📌 Listas Enlazadas</h3>
+            <p>Permiten administrar información dinámica.</p>
+            <p><strong>Uso:</strong> Historiales, navegación de datos, gestión de recursos.</p>
+            <div class="img-placeholder">[Espacio para Imagen]: Cadena de nodos interconectados.</div>
+
+            <h3>📌 Pilas (Stacks)</h3>
+            <p>Gestionan navegación y control de vistas.</p>
+            <p><strong>Uso:</strong> Historial de pantallas, retroceso de navegación.</p>
+            <div class="img-placeholder">[Espacio para Imagen]: Representación visual de una pila de navegación.</div>
+
+            <h3>📌 Colas (Queues)</h3>
+            <p>Procesan elementos en orden de llegada.</p>
+            <p><strong>Uso:</strong> Descargas, solicitudes a servidores, procesamiento de eventos.</p>
+            <div class="img-placeholder">[Espacio para Imagen]: Cola de solicitudes hacia un servidor.</div>
+
+            <h3>📌 Tablas Hash</h3>
+            <p>Permiten búsquedas rápidas.</p>
+            <p><strong>Uso:</strong> Cachés, configuraciones, usuarios autenticados.</p>
+            <div class="img-placeholder">[Espacio para Imagen]: Esquema visual de una tabla hash.</div>
+        </section>
+
+        <!-- 9️⃣ Clasificación de los Toolkits de Desarrollo -->
+        <section id="toolkits">
+            <h2>9. Clasificación de los Toolkits de Desarrollo</h2>
+            
+            <h3>📌 Toolkits Nativos</h3>
+            <p>Permiten crear aplicaciones específicas para un sistema operativo.</p>
+            <p><strong>Ejemplos:</strong> Android SDK, Jetpack Compose, Android Jetpack, SwiftUI</p>
+            <p><strong>Ventajas:</strong> Máximo rendimiento, acceso completo al hardware, integración total con el sistema operativo.</p>
+            <p><strong>Desventajas:</strong> Requieren desarrollo independiente para cada plataforma.</p>
+            <div class="img-placeholder">[Espacio para Imagen]: Arquitectura de una aplicación Android nativa.</div>
+
+            <h3>📌 Toolkits Multiplataforma</h3>
+            <p>Permiten desarrollar una sola aplicación para varios sistemas operativos.</p>
+            <p><strong>Ejemplos:</strong> Flutter, React Native, Xamarin, Kotlin Multiplatform</p>
+            <p><strong>Ventajas:</strong> Código compartido, menor tiempo de desarrollo, reducción de costos.</p>
+            <p><strong>Desventajas:</strong> Posibles limitaciones en funciones específicas del hardware.</p>
+            <div class="img-placeholder">[Espacio para Imagen]: Aplicación ejecutándose en Android y iOS utilizando el mismo código.</div>
+        </section>
+
+        <!-- 🔟 Selección de Librerías y Toolkits -->
+        <section id="seleccion">
+            <h2>10. Selección de Librerías y Toolkits</h2>
+            <p>La elección depende de las necesidades específicas del proyecto.</p>
+            
+            <h3>Factores a considerar</h3>
+            <ul>
+                <li><strong>Compatibilidad:</strong> Debe funcionar correctamente con la plataforma objetivo.</li>
+                <li><strong>Comunidad:</strong> Una comunidad activa proporciona documentación y soporte.</li>
+                <li><strong>Rendimiento:</strong> Debe optimizar recursos y tiempo de ejecución.</li>
+                <li><strong>Mantenimiento:</strong> Debe recibir soporte y actualizaciones periódicas.</li>
+                <li><strong>Seguridad:</strong> Debe provenir de desarrolladores y repositorios confiables.</li>
+            </ul>
+
+            <h3>Ejemplo de Selección</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Necesidad</th>
+                        <th>Herramienta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Interfaz gráfica</td>
+                        <td>Jetpack Compose</td>
+                    </tr>
+                    <tr>
+                        <td>Consumo de servicios web</td>
+                        <td>Retrofit</td>
+                    </tr>
+                    <tr>
+                        <td>Base de datos local</td>
+                        <td>Room</td>
+                    </tr>
+                    <tr>
+                        <td>Notificaciones</td>
+                        <td>Firebase</td>
+                    </tr>
+                    <tr>
+                        <td>Imágenes</td>
+                        <td>Glide</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Diagrama integrando múltiples herramientas dentro de una aplicación.
+            </div>
+        </section>
+
+        <!-- 1️⃣1️⃣ Impacto de las Librerías en el Desarrollo Móvil -->
+        <section id="impacto">
+            <h2>11. Impacto de las Librerías en el Desarrollo Móvil</h2>
+            
+            <h3>Beneficios Técnicos</h3>
+            <ul>
+                <li><strong>Mayor productividad:</strong> Permiten reutilizar soluciones existentes.</li>
+                <li><strong>Menos errores:</strong> Las funcionalidades han sido previamente probadas.</li>
+                <li><strong>Desarrollo más rápido:</strong> Reducen el tiempo necesario para implementar características.</li>
+                <li><strong>Mejor mantenimiento:</strong> Facilitan la actualización y mejora del proyecto.</li>
+            </ul>
+
+            <h3>Posibles Riesgos</h3>
+            <ul>
+                <li><strong>Dependencia excesiva:</strong> Demasiadas librerías pueden complicar el proyecto.</li>
+                <li><strong>Obsolescencia:</strong> Algunas herramientas dejan de recibir soporte.</li>
+                <li><strong>Incompatibilidades:</strong> Las actualizaciones pueden generar conflictos.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Comparación entre una aplicación optimizada y otra con exceso de dependencias.
+            </div>
+        </section>
+
+        <!-- 1️⃣2️⃣ Aplicación de Librerías y Toolkits en Proyectos Reales -->
+        <section id="proyectos-reales">
+            <h2>12. Aplicación de Librerías y Toolkits en Proyectos Reales</h2>
+            
+            <h3>Aplicación de Redes Sociales</h3>
+            <p><strong>Herramientas utilizadas:</strong> Jetpack Compose, Firebase, Retrofit, Glide</p>
+            <p><strong>Funciones:</strong> Mostrar publicaciones, gestionar usuarios, cargar imágenes, enviar notificaciones.</p>
+
+            <h3>Aplicación Bancaria</h3>
+            <p><strong>Herramientas utilizadas:</strong> Retrofit, Room, Firebase Authentication</p>
+            <p><strong>Funciones:</strong> Gestión segura de usuarios, consultas de información, persistencia local.</p>
+
+            <h3>Aplicación Educativa</h3>
+            <p><strong>Herramientas utilizadas:</strong> Jetpack Compose, Room, Firebase</p>
+            <p><strong>Funciones:</strong> Seguimiento de cursos, almacenamiento de progreso, sincronización en la nube.</p>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen]: Comparación entre distintos tipos de aplicaciones y sus herramientas.
+            </div>
+        </section>
+
+        <!-- 1️⃣3️⃣ Relación con la Ingeniería de Software -->
+        <section id="ingenieria-software">
+            <h2>13. Relación con la Ingeniería de Software</h2>
+            <p>Las librerías y toolkits son fundamentales porque promueven:</p>
+            <ul>
+                <li>Reutilización de componentes.</li>
+                <li>Desarrollo modular.</li>
+                <li>Escalabilidad del software.</li>
+                <li>Mantenimiento simplificado.</li>
+                <li>Reducción de costos
