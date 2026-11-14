@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1: Control de Versiones - Tutorial</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navegación de retorno -->
+    <nav>
+        <a href="../index.html" class="back-btn">&larr; Volver al Menú Principal</a>
+    </nav>
+
+    <!-- Portada / Encabezado -->
+    <header>
+        <h1>Módulo 1 — Control de Versiones</h1>
+        <p><strong>Subtítulo:</strong> Administra, registra y recupera cambios en tus proyectos de software</p>
+        
+        <div class="img-placeholder">
+            [Espacio para Imagen 1]: Ilustración de un equipo de desarrolladores trabajando con ramas, commits y repositorios.
+        </div>
+    </header>
+
+    <main>
+        <!-- ¿Qué es el Control de Versiones? -->
+        <section id="que-es">
+            <h2>2. ¿Qué es el Control de Versiones?</h2>
+            <p>El control de versiones es un sistema que permite registrar, administrar y supervisar los cambios realizados en archivos, documentos y código fuente a lo largo del tiempo. Su principal finalidad es mantener un historial detallado de las modificaciones realizadas en un proyecto, permitiendo recuperar versiones anteriores, identificar autores de cambios y facilitar el trabajo colaborativo.</p>
+            <p>En el desarrollo de aplicaciones móviles y software en general, el control de versiones es indispensable porque ayuda a prevenir la pérdida de información, facilita el mantenimiento del código y permite que varios desarrolladores trabajen simultáneamente sin interferir entre sí.</p>
+            
+            <h3> Importancia:</h3>
+            <ul>
+                <li>Conserva el historial completo del proyecto.</li>
+                <li>Permite restaurar versiones anteriores.</li>
+                <li>Facilita el trabajo en equipo.</li>
+                <li>Reduce errores durante el desarrollo.</li>
+                <li>Mejora la organización del código.</li>
+                <li>Aumenta la trazabilidad de los cambios.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                <img src="ruta/a/imagen1.jpg" alt="Diagrama de evolución de versiones">
+            </div>
+        </section>
+
+        <!-- Tipos de Sistemas de Control de Versiones -->
+        <section id="tipos">
+            <h2>3. Tipos de Sistemas de Control de Versiones</h2>
+            
+            <h3>Sistemas Centralizados (CVCS)</h3>
+            <p>Almacenan toda la información del proyecto en un único servidor central. Los desarrolladores obtienen una copia de trabajo desde dicho servidor y deben conectarse a él para registrar cambios.</p>
+            <p><strong>Ejemplos:</strong> Subversion (SVN), Perforce, CVS.</p>
+            <p><strong>Características:</strong></p>
+            <ul>
+                <li>Existe un único repositorio principal.</li>
+                <li>Los usuarios dependen del servidor central.</li>
+                <li>La administración es más sencilla.</li>
+                <li>Menor flexibilidad para trabajar sin conexión.</li>
+            </ul>
+
+            <h3>Sistemas Distribuidos (DVCS)</h3>
+            <p>Cada desarrollador tiene una copia completa del repositorio, incluyendo su historial completo.</p>
+            <p><strong>Ejemplos:</strong> Git, Mercurial, Bazaar.</p>
+            <p><strong>Características:</strong></p>
+            <ul>
+                <li>Cada usuario posee una copia completa.</li>
+                <li>Permiten trabajar sin conexión.</li>
+                <li>Son más rápidos para operaciones locales.</li>
+                <li>Ofrecen mayor seguridad frente a fallos del servidor.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                <img src="ruta/a/imagen3.jpg" alt="Diagrama comparativo: servidor central (SVN) vs copias locales completas (Git)">
+            </div>
+        </section>
+
+        <!-- Ventajas y Desventajas (En Imagen) -->
+        <section id="ventajas-desventajas">
+            <h2>Ventajas y Desventajas (Git vs SVN)</h2>
+            <p>A continuación se presenta un cuadro comparativo visual que contrasta las características principales entre los sistemas distribuidos (Git) y los centralizados (SVN):</p>
+
+            <div class="img-placeholder">
+                <img src="ruta/a/imagen4.jpg" alt="Cuadro comparativo visual / infografía entre Git y SVN (Características, trabajo sin conexión, velocidad, dependencias y ramas)">
+            </div>
+        </section>
+
+        <!-- 5️⃣ Funcionamiento del Control de Versiones -->
+        <section id="funcionamiento">
+            <h2>Funcionamiento del Control de Versiones</h2>
+            
+            <h3>🔑 Elementos principales:</h3>
+            <ul>
+                <li><strong>Repositorio:</strong> Lugar donde se almacena toda la información y el historial del proyecto.</li>
+                <li><strong>Commit:</strong> Captura o punto de control del estado del proyecto en un momento determinado.</li>
+                <li><strong>Branch (Rama):</strong> Permite desarrollar nuevas funcionalidades o realizar pruebas sin afectar la versión principal.</li>
+                <li><strong>Merge (Fusión):</strong> Proceso mediante el cual los cambios de una rama se integran en otra.</li>
+                <li><strong>Historial:</strong> Registro cronológico de todas las acciones realizadas dentro del proyecto.</li>
+            </ul>
+
+            <h3>Flujo típico:</h3>
+            <ol>
+                <li>Crear o modificar archivos.</li>
+                <li>Preparar los cambios (Staging Area).</li>
+                <li>Registrar los cambios en el historial (Commit).</li>
+                <li>Compartir los cambios con otros desarrolladores (Push).</li>
+                <li>Integrar cambios mediante fusiones (Merge).</li>
+            </ol>
+
+            <div class="img-placeholder">
+                [Espacio para Imagen 5]: Diagrama del flujo: Working Directory → Staging Area → Commit → Repositorio.
+            </div>
+        </section>
+
+        <!--Rastreo y Gestión de Cambios -->
+        <section id="rastreo">
+            <h2> Rastreo y Gestión de Cambios</h2>
+            <p>El control de versiones funciona como un sistema de auditoría que permite conocer:</p>
+            <ul>
+                <li>Quién realizó un cambio.</li>
+                <li>Cuándo se realizó.</li>
+                <li>Qué archivos fueron modificados.</li>
+                <li>Cuál era la versión anterior y cuál es la actual.</li>
+            </ul>
+
+            <h3>Aplicación en desarrollo móvil (Android / iOS):</h3>
+            <ul>
+                <li>Administrar nuevas funcionalidades de forma ordenada.</li>
+                <li>Corregir errores críticos sin afectar la aplicación publicada.</li>
+                <li>Coordinar equipos de desarrollo multidisciplinarios.</li>
+                <li>Mantener diferentes versiones del proyecto (v1.0, v2.0, etc.).</li>
+                <li>Recuperar estados funcionales cuando ocurre un fallo imprevisto.</li>
+            </ul>
+
+            <h3>Trabajo colaborativo:</h3>
+            <ul>
+                <li>Cada desarrollador trabaja en su propia rama independiente.</li>
+                <li>Los cambios son revisados por pares.</li>
+                <li>Se aprueban mediante revisiones de código (Pull Requests / Merge Requests).</li>
+                <li>Finalmente se integran al proyecto principal en producción.</li>
+            </ul>
+        </section>
+
+        <!-- Ejemplos Prácticos -->
+        <section id="ejemplos">
+            <h2>Ejemplos Prácticos</h2>
+            
+            <h3>Caso 1: Desarrollo de una App Móvil</h3>
+            <p>Un desarrollador implementa una pantalla de inicio de sesión mientras otro desarrolla el módulo de registro de usuarios. Gracias al control de versiones, ambos trabajan simultáneamente, no sobrescriben el trabajo del otro, los cambios se combinan de forma segura y se mantiene un historial completo.</p>
+
+            <h3>Caso 2: Corrección de Errores (Debugging)</h3>
+            <p>Después de una actualización, la aplicación presenta fallos inesperados. El control de versiones permite identificar con exactitud qué commit provocó el problema, restaurar una versión estable anterior y comparar diferencias línea por línea.</p>
+
+            <h3>Caso 3: Desarrollo Web</h3>
+            <p>Una empresa actualiza un sitio web con múltiples programadores. El control de versiones ayuda a gestionar contenido nuevo, mejoras visuales y correcciones de errores de manera sincronizada y organizada.</p>
+
+            <div class="img-placeholder">
+                <img src="ruta/a/imagen6.jpg" alt="Captura de pantalla de un historial de commits en GitHub o GitLab">
+            </div>
+        </section>
+
+        <!-- Relación con Estructuras de Datos -->
+        <section id="estructuras-datos">
+            <h2>Relación con Estructuras de Datos</h2>
+            <p>Los sistemas de control de versiones utilizan internamente diversas estructuras de datos avanzadas para operar:</p>
+            <ul>
+                <li><strong>Grafos dirigidos acíclicos (DAG):</strong> Utilizados para representar el historial de commits y sus relaciones ramificadas en Git.</li>
+                <li><strong>Árboles (Trees):</strong> Organizan jerárquicamente los directorios y archivos del proyecto.</li>
+                <li><strong>Tablas hash:</strong> Generan identificadores unívocos (como hashes SHA-1) para cada commit y objeto guardado.</li>
+                <li><strong>Listas enlazadas y referencias (Punteros/HEAD):</strong> Conectan versiones sucesivas y apuntan a la rama activa actual.</li>
+            </ul>
+
+            <div class="img-placeholder">
+                <img src="ruta/a/imagen7.jpg" alt="Diagrama del DAG de commits de Git">
+            </div>
+        </section>
+
+        <!--Sección de Videos Recomendados -->
+        <section id="videos">
+            <h2>Videos Recomendados</h2>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=3GymExBkKjE" target="_blank">Curso completo de Git desde cero (español) — freeCodeCamp</a></li>
+                <li><a href="https://m.youtube.com/watch?v=cGMspIIbK2s" target="_blank">Git vs SVN, diferencias clave y evolución</a></li>
+                <li><a href="https://m.youtube.com/watch?v=U3pqBu7I9V4" target="_blank">Git por línea de comandos, guía práctica para desarrolladores</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 
+     Pie de página -->
+    <footer>
+        <p>&copy; 2026 - Tutorial Académico de Desarrollo Web y Móvil</p>
+        <p>Referencias y herramientas oficiales: 
+            <a href="https://git-scm.com/" target="_blank">Git SCM</a> | 
+            <a href="https://github.com/" target="_blank">GitHub</a> | 
+            <a href="https://subversion.apache.org/" target="_blank">Apache SVN</a>
+        </p>
+    </footer>
+
+</body>
+</html>
