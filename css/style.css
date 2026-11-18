@@ -564,3 +564,62 @@ footer a:hover {
         border-radius: 12px;
     }
 }
+/* ================================================================= */
+/* ESTILOS ESPECÍFICOS PARA EL DASHBOARD DE MÓDULOS (INDEX)          */
+/* ================================================================= */
+
+.modules-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.module-card {
+    background: var(--bg-color);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.module-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-light), var(--shadow-dark);
+    border-color: rgba(37, 99, 235, 0.3);
+}
+
+.module-card:active {
+    box-shadow: var(--shadow-inset);
+    transform: translateY(0);
+}
+
+.module-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+.module-card h3 {
+    color: var(--primary-dark);
+    font-size: 1.15rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.placeholder-text {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    background: rgba(163, 177, 198, 0.1);
+    padding: 8px 12px;
+    border-radius: var(--border-radius-sm);
+    text-align: center;
+    border: 1px dashed rgba(163, 177, 198, 0.4);
+    margin-top: auto;
+}

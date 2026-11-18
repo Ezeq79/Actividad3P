@@ -3,58 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorial</title>
+    <title>Tutorial — Desarrollo Web y Móvil</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!--Titulo de Actividad-->
+    <!-- Título de Actividad (Header Hero) -->
     <header>
-        <h1> Temas fundamentales de Desarrollo Web y Movil</h1>
-        <p> Investigación y elaboración de sitio web responsivo</p>
+        <h1>Temas Fundamentales de Desarrollo Web y Móvil</h1>
+        <p>Investigación y elaboración de sitio web responsivo</p>
     </header>
-     <main>
-            <!--Segmentos o Temas-->
-        <section>
-            <h2>Modulos</h2>
-            <ul>
-                <li>
-                    <a href="pages/verciones.html"> 1. Control de Versiones</a>
-                    <p>[Imagen de control de versiones]</p>
-                </li>
-                <li>
-                    <a href="pages/persistencia.html"> 2. persistencia y Acceso a datos</a>
-                    <p>[Imagen persistencia y acceso de datos]</p>
-                </li>
-                <li>
-                    <a href="pages/sensores.html"> 3.Gestion de sensores</a>
-                    <p>[Imagen de Gestion de sensores]</p>
-                </li>
-                <li>
-                    <a href="pages/recusosMultimedia.html"> 4. Usos de Recursos Multimedia</a>
-                    <p>[Imagen de uso de recursos multimedia]</p>
-                </li>
-                <li>
-                    <a href="pages/notificacion.html"> 5. Servicios de notificaciones nube</a>
-                    <p>[Imagen de servicio de notificacion]</p>
-                </li>
-                <li>
-                    <a href="pages/librerias.html"> 6. Librerias y Toolkits</a>
-                    <p>[Imagen de librerias y toolkits]</p>
-                </li>
-                <li>
-                    <a href="pages/depuracion.html"> 7. Depuración y Seguridad</a>
-                    <p>[Imagen de depuracion y seguridad]</p>
-                </li>
-            </ul>
+
+    <main>
+        <!-- Dashboard de Módulos -->
+        <section class="dashboard-section">
+            <h2>Módulos</h2>
+            <div class="modules-grid">
+                
+                <a href="pages/verciones.html" class="module-card">
+                    <div class="module-number">01</div>
+                    <h3>Control de Versiones</h3>
+                    <p class="placeholder-text">
+                        <img src="img/2.jpg" alt="Imagen de control de versiones">
+                    </p>
+                </a>
+
+                <a href="pages/persistencia.html" class="module-card">
+                    <div class="module-number">02</div>
+                    <h3>Persistencia y Acceso a Datos</h3>
+                    <p class="placeholder-text">
+                        <img src="img/3.jpg" alt="Imagen de persistencia y acceso a datos">
+                    </p>
+                </a>
+
+                <a href="pages/sensores.html" class="module-card">
+                    <div class="module-number">03</div>
+                    <h3>Gestión de Sensores</h3>
+                    <p class="placeholder-text">
+                        <img src="img/4.jpg" alt="Imagen de gestión de sensores">
+                    </p>
+                </a>
+
+                <a href="pages/recusosMultimedia.html" class="module-card">
+                    <div class="module-number">04</div>
+                    <h3>Uso de Recursos Multimedia</h3>
+                    <p class="placeholder-text">
+                        <img src="img/5.jpg" alt="Imagen de recursos multimedia">
+                    </p>
+                </a>
+
+                <a href="pages/notificacion.html" class="module-card">
+                    <div class="module-number">05</div>
+                    <h3>Servicios de Notificaciones en la Nube</h3>
+                    <p class="placeholder-text">
+                        <img src="img/6.jpg" alt="Imagen de servicio de notificación">
+                    </p>
+                </a>
+
+                <a href="pages/librerias.html" class="module-card">
+                    <div class="module-number">06</div>
+                    <h3>Librerías y Toolkits</h3>
+                    <p class="placeholder-text">
+                        <img src="img/7.jpg" alt="Imagen de librerías y toolkits">
+                    </p>
+                </a>
+
+                <a href="pages/depuracion.html" class="module-card">
+                    <div class="module-number">07</div>
+                    <h3>Depuración y Seguridad</h3>
+                    <p class="placeholder-text">
+                        <img src="img/8.jpg" alt="Imagen de depuración y seguridad">
+                    </p>
+                </a>
+
+            </div>
         </section>
-        <!--Segmento de Referencias-->
-         <section>
-                <p>Referencias</p>
-         </section>
-     </main>   
-     <footer>
-        <p> Ezequiel Lima Ramirez - Desarrollo de App Moviles</p>
-     </footer>
+
+        <!-- Segmento de Referencias -->
+        <section class="references-section">
+            <h2>Referencias</h2>
+            <p>Material bibliográfico y documentación oficial utilizada para el desarrollo de los módulos académicos.</p>
+        </section>
+    </main>   
+
+    <footer>
+        <p>&copy; 2026 Tutorial Académico</p>
+        <p>Ezequiel Lima Ramírez — Desarrollo de Apps Móviles</p>
+    </footer>
    
 </body>
 </html>
